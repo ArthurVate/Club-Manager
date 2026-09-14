@@ -62,7 +62,7 @@
   .brandmark{ display:flex; align-items:center; gap:10px; font-family:'Fraunces', serif; font-weight:600; font-size:1.05rem; color: var(--ink); white-space: nowrap; }
   .brandmark .dot{ width:9px; height:9px; border-radius:50%; background: var(--red-bright); box-shadow: 0 0 0 3px rgba(199,51,73,0.18); flex-shrink:0; }
   .navlinks{ display:flex; gap: 24px; }
-  .navlinks a{ font-size: 0.85rem; color: var(--ink-dim); text-decoration:none; border-bottom: 1px solid transparent; padding-bottom: 2px; transition: color .15s ease, border-color .15s ease; }
+  .navlinks a{ font-family: 'Fraunces', serif; font-size: 0.9rem; font-weight: 600; color: var(--ink); text-decoration:none; border-bottom: 1px solid transparent; padding-bottom: 2px; transition: color .15s ease, border-color .15s ease; }
   .navlinks a:hover{ color: var(--ink); border-color: var(--gold-dim); }
   @media (max-width: 860px){ .navlinks{ display:none; } }
 
@@ -191,6 +191,17 @@
   .result-cell .rc-n{ font-family:'Fraunces', serif; font-size: 0.78rem; color: var(--ink-faint); margin-bottom: 8px; }
   .result-cell h4{ font-size: 1.05rem; margin-bottom: 8px; }
   .result-cell p{ margin:0; color: var(--ink-dim); font-size: 0.88rem; }
+  #backToTop{
+    position: fixed; right: 24px; bottom: 24px; z-index: 60;
+    width: 46px; height: 46px; border-radius: 50%;
+    background: var(--surface); border: 1px solid var(--line);
+    color: var(--ink); display:flex; align-items:center; justify-content:center;
+    cursor: pointer; opacity: 0; visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity .2s ease, transform .2s ease, visibility .2s ease, border-color .15s ease;
+  }
+  #backToTop.show{ opacity: 1; visibility: visible; transform: translateY(0); }
+  #backToTop:hover{ border-color: var(--gold-dim); color: var(--gold); }
 </style>
 </head>
 <body>
@@ -247,9 +258,9 @@
         <h3>Merch &amp; Products</h3>
         <div class="goal">Вещи, которые хочется носить, а не сувенир с логотипом</div>
         <ul>
-          <li>Коллаборации с брендами: <a href="https://arthurvate.github.io/Watch/" target="_blank" rel="noopener" style="color:var(--gold); text-decoration:underline;">часы</a>, одежда</li>
-          <li>Прозрачная экономика: earn / buy / exclusive</li>
-          <li>Запуск как событие: тизер, голосование, тираж</li>
+          <li>Коллаборации с брендами: <a href="https://arthurvate.github.io/Watch/" style="color:var(--gold); text-decoration:underline;">часы Луч</a></li>
+          <li>Производство различных линеек мерча</li>
+          <li>Изготовление различных продуктов на основе пожеланий участников клуба</li>
         </ul>
       </div>
 
@@ -258,8 +269,8 @@
         <div class="goal">Каждое значимое событие оставляет цифровой след</div>
         <ul>
           <li>Архив по годам, событиям и участникам</li>
-          <li>Серия «Meet RedParty» - истории участников</li>
-          <li>Year in Review как итог года для сообщества</li>
+          <li>Съёмка и документирование ивентов и турниров</li>
+          <li>Итоги года в медийном отчёте</li>
         </ul>
       </div>
     </div>
@@ -268,15 +279,15 @@
 
 <section id="member">
   <div class="wrap">
-    <h3 class="h3">Первые недели: наводим порядок</h3>
+    <h3 class="h3">База данных участников клуба</h3>
     <div class="grid cols-2">
       <div class="cell">
         <h4>Собрать базу участников</h4>
-        <p>Одна таблица на 180+ участников: дни рождения, годовщины вступления, свадьбы, дети, крупные покерные достижения - в отдельный Important Dates Calendar.</p>
+        <p>Одна таблица на 180+ участников: дни рождения, годовщины вступления, свадьбы, дети, крупные покерные достижения и многое другое.</p>
       </div>
       <div class="cell">
         <h4>Провести опрос</h4>
-        <p>5-7 вопросов: где сейчас живёшь, какие активности интересны, какие мероприятия хотел бы посещать, с кем интересно знакомиться, какой мерч нужен, что нравится сейчас, что бы изменил.</p>
+        <p>5-7 вопросов: где сейчас живёшь, какие активности интересны, какие мероприятия хотел бы посещать, какой мерч нужен, что нравится сейчас, что бы изменил.</p>
       </div>
       <div class="cell">
         <h4>Сделать аудит</h4>
@@ -389,10 +400,10 @@
     <div class="month-panel" id="panel-oct">
       <div class="month-headline"><div class="a">Как превратить систему в регулярные действия?</div></div>
       <div class="month-grid">
-        <div class="month-card"><div class="tag">Member</div><ul><li>Запуск birthday protocol</li><li>Onboarding: day 1 &rarr; week 2</li><li>80-90% базы заполнено, 30-40 личных контактов</li></ul></div>
-        <div class="month-card"><div class="tag">Events</div><ul><li>1 спортивное + 1 social мероприятие</li><li>Playbook: идея &rarr; бюджет &rarr; регистрация &rarr; отчёт</li><li>Сбор обратной связи</li></ul></div>
-        <div class="month-card"><div class="tag">Merch</div><ul><li>5-10 поставщиков на категорию</li><li>Outreach на 20 брендов для коллабораций</li></ul></div>
-        <div class="month-card"><div class="tag">Media</div><ul><li>Content owner на каждом мероприятии</li><li>Фотоальбом + 2-4 коротких видео + recap</li></ul></div>
+        <div class="month-card"><div class="tag">Member</div><ul><li>Запуск birthday protocol</li><li>Onboarding: day 1 &rarr; week 2</li><li>80-90% базы заполнено</li></ul></div>
+        <div class="month-card"><div class="tag">Events</div></div>
+        <div class="month-card"><div class="tag">Merch</div><ul><li>Outreach на 20 брендов для коллабораций</li></ul></div>
+        <div class="month-card"><div class="tag">Media</div></div>
       </div>
     </div>
 
@@ -444,6 +455,21 @@
     </div>
   </div>
 </section>
+
+<button id="backToTop" aria-label="Наверх" title="Наверх">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="M5 12l7-7 7 7"/></svg>
+</button>
+
+<script>
+  var backToTop = document.getElementById('backToTop');
+  window.addEventListener('scroll', function(){
+    if (window.scrollY > 400) { backToTop.classList.add('show'); }
+    else { backToTop.classList.remove('show'); }
+  });
+  backToTop.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+</script>
 
 <script>
   document.querySelectorAll('.month-tab').forEach(function(tab){
