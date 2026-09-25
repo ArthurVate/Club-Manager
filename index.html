@@ -136,21 +136,6 @@
   .callout .cal-title{ font-family:'Fraunces', serif; color: var(--gold); font-size: 0.95rem; margin-bottom: 8px; }
   .callout p{ margin:0; color: var(--ink-dim); font-size: 0.9rem; font-style: italic; }
 
-  /* ---------- month tabs ---------- */
-  .month-tabs{ display:flex; gap: 6px; margin-top: 20px; flex-wrap: wrap; border-bottom: 1px solid var(--line); }
-  .month-tab{ font-family:'Fraunces', serif; background: none; border: none; cursor: pointer; color: var(--ink-faint); font-size: 1.05rem; padding: 10px 4px 14px; margin-right: 26px; position: relative; transition: color .15s ease; }
-  .month-tab .n{ font-family:'Manrope',sans-serif; font-size:0.7rem; color: var(--ink-faint); display:block; margin-bottom:4px; }
-  .month-tab.active{ color: var(--ink); }
-  .month-tab.active::after{ content:""; position:absolute; left:0; right:0; bottom:-1px; height:2px; background: var(--red-bright); }
-  .month-tab:hover{ color: var(--ink); }
-
-  .month-panel{ display:none; padding-top: 18px; }
-  .month-panel.active{ display:block; }
-
-  .month-headline{ max-width: none; margin-bottom: 16px; }
-  .month-headline .q{ color: var(--ink-faint); font-size: 0.86rem; margin-bottom: 8px; }
-  .month-headline .a{ font-family:'Fraunces', serif; font-size: 1.3rem; color: var(--ink); }
-
   .month-grid{ display:grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
   @media (max-width: 920px){ .month-grid{ grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 560px){ .month-grid{ grid-template-columns: 1fr; } }
@@ -176,7 +161,7 @@
   .quota-pill b{ color: var(--ink); font-weight: 700; }
 
   /* ---------- report format ---------- */
-  .report-grid{ margin-top: 14px; display:grid; grid-template-columns: repeat(5,1fr); gap: 1px; background: var(--line-soft); border: 1px solid var(--line-soft); }
+  .report-grid{ margin-top: 14px; display:grid; grid-template-columns: repeat(4,1fr); gap: 1px; background: var(--line-soft); border: 1px solid var(--line-soft); }
   @media (max-width: 920px){ .report-grid{ grid-template-columns: repeat(2,1fr); } }
   @media (max-width: 480px){ .report-grid{ grid-template-columns: 1fr; } }
   .report-cell{ background: var(--bg); padding: 18px; }
@@ -225,7 +210,7 @@
     <p class="lede">
       Цель - клуб знает каждого участника,
       реагирует на важные события в его жизни, регулярно собирает сообщество на ивентах и создаёт продукты,
-      которыми участники действительно хотят пользоваться.
+      которыми игроки действительно хотят пользоваться.
     </p>
   </div>
 </header>
@@ -236,11 +221,11 @@
     <div class="pillars">
       <div class="pillar">
         <h3>Member Experience</h3>
-        <div class="goal">Клуб знает участника - и участник это чувствует</div>
+        <div class="goal">Клуб знает каждого участника и игрок это чувствует</div>
         <ul>
           <li>Единая база 180+ участников с личными данными и историей</li>
           <li>Реакция на дни рождения, свадьбы, детей и результаты</li>
-          <li>Onboarding нового участника с первого дня в клубе</li>
+          <li>Приветствие нового участника с первого дня в клубе</li>
         </ul>
       </div>
 
@@ -260,7 +245,7 @@
         <ul>
           <li>Коллаборации с брендами: <a href="https://arthurvate.github.io/Watch/" style="color:var(--gold); text-decoration:underline;">часы Луч</a></li>
           <li>Производство различных линеек мерча</li>
-          <li>Изготовление различных продуктов на основе пожеланий участников клуба</li>
+          <li>Изготовление продуктов на основе пожеланий игроков</li>
         </ul>
       </div>
 
@@ -283,25 +268,25 @@
     <div class="grid cols-2">
       <div class="cell">
         <h4>Собрать базу участников</h4>
-        <p>Одна таблица на 180+ участников: дни рождения, годовщины вступления, свадьбы, дети, крупные покерные достижения и многое другое.</p>
+        <p>Одна таблица на 180+ участников: дни рождения, годовщины вступления, свадьбы, дети, крупные покерные достижения и многое другое</p>
       </div>
       <div class="cell">
         <h4>Провести опрос</h4>
-        <p>5-7 вопросов: где сейчас живёшь, какие активности интересны, какие мероприятия хотел бы посещать, какой мерч нужен, что нравится сейчас, что бы изменил.</p>
+        <p>5-7 вопросов: где сейчас живёшь, какие активности интересны, какие мероприятия хотел бы посещать, какой мерч нужен, что нравится сейчас, что бы изменил</p>
       </div>
       <div class="cell">
         <h4>Сделать аудит</h4>
-        <p>Какие мероприятия уже проводились, сколько людей приходило, сколько стоили, какой был отклик, какой мерч уже делали, где хранятся фото и видео, какие подрядчики уже есть.</p>
+        <p>Какие мероприятия уже проводились, сколько людей приходило, сколько стоили, какой был отклик, какой мерч уже делали, где хранятся фото и видео, какие подрядчики уже есть</p>
       </div>
       <div class="cell">
         <h4>Разделить на группы</h4>
-        <p>VIP, Active, New, International, Local, Potential ambassadors - чтобы не пытаться одинаково работать со всеми 180+ участниками.</p>
+        <p>VIP, Active, New, International, Local, Potential ambassadors - чтобы не пытаться одинаково работать со всеми 180+ участниками</p>
       </div>
     </div>
 
     <h3 class="h3">Что входит в базу участников</h3>
     <div class="grid cols-3">
-      <div class="cell"><h4>Основная информация</h4><ul><li>Имя, фамилия, nickname</li><li>Telegram, email</li><li>Дата вступления, статус</li></ul></div>
+      <div class="cell"><h4>Основная информация</h4><ul><li>Имя, фамилия, nickname</li><li>Discord, email</li><li>Дата вступления, статус</li></ul></div>
       <div class="cell"><h4>Локация</h4><ul><li>Страна, город</li><li>Где преимущественно находится</li></ul></div>
       <div class="cell"><h4>Личная информация</h4><ul><li>День рождения</li><li>Семейный статус, партнёр, дети</li><li>Важные даты</li></ul></div>
       <div class="cell"><h4>Интересы</h4><ul><li>Покер, спорт, путешествия</li><li>Автомобили, музыка, игры</li><li>Бизнес, другие хобби</li></ul></div>
@@ -317,10 +302,10 @@
       <div class="level-row"><div class="lv">Level 4</div><div class="lv-desc">VIP attention</div></div>
     </div>
     <div class="grid cols-4" style="margin-top:20px;">
-      <div class="cell"><h4>День рождения</h4><p>Поздравление, подарок, публичное поздравление в закрытом чате - если уместно.</p></div>
-      <div class="cell"><h4>Свадьба</h4><p>Персональное поздравление, цветы или подарок.</p></div>
-      <div class="cell"><h4>Рождение ребёнка</h4><p>Подарок от клуба, поздравление.</p></div>
-      <div class="cell"><h4>Крупный результат</h4><p>Личное сообщение, поздравление в сообществе, media coverage, при значимом результате - подарок.</p></div>
+      <div class="cell"><h4>День рождения</h4><p>Поздравление, подарок, публичное поздравление в закрытом чате - если уместно</p></div>
+      <div class="cell"><h4>Свадьба</h4><p>Персональное поздравление, цветы или подарок</p></div>
+      <div class="cell"><h4>Рождение ребёнка</h4><p>Подарок от клуба, поздравление</p></div>
+      <div class="cell"><h4>Крупный результат</h4><p>Личное сообщение, поздравление в сообществе, при значимом результате и значимым игрокам - подарки</p></div>
     </div>
 
     <h3 class="h3">Путь нового участника</h3>
@@ -338,9 +323,9 @@
     <h2 class="h2">Events: календарь, форматы и единый процесс для каждого мероприятия</h2>
 
     <div class="grid cols-3">
-      <div class="cell"><h4>Global</h4><p>Международные ивенты и встречи по интересам.</p></div>
-      <div class="cell"><h4>Local</h4><p>Картинг, padel, футбол, мафия, баня, ресторан, боулинг, hiking и другие активности на регулярной основе.</p></div>
-      <div class="cell"><h4>Poker Trips</h4><p>Winamax Series, крупные турниры, совместные поездки.</p></div>
+      <div class="cell"><h4>Global</h4><p>Международные ивенты и корпоративы</p></div>
+      <div class="cell"><h4>Local</h4><p>Картинг, padel, футбол, мафия, баня, ресторан, боулинг, hiking и другие активности на регулярной основе</p></div>
+      <div class="cell"><h4>Poker Trips</h4><p>Winamax Series, крупные турниры, совместные поездки</p></div>
     </div>
 
     <h3 class="h3">Event Playbook - единый процесс для каждого мероприятия</h3>
@@ -361,8 +346,8 @@
       <div class="vstep"><div class="vt-time">За 1-3 месяца</div><div class="vt-desc">Выбрать формат и дату, получить цены, определить бюджет, согласовать.</div></div>
       <div class="vstep"><div class="vt-time">За 3-4 недели</div><div class="vt-desc">Анонс, регистрация, сбор участников.</div></div>
       <div class="vstep"><div class="vt-time">За 1-2 недели</div><div class="vt-desc">Подтвердить участников, оплатить, проверить детали, подготовить контент-план.</div></div>
-      <div class="vstep"><div class="vt-time">День мероприятия</div><div class="vt-desc">Attendance, фото, видео, stories, контроль организации.</div></div>
-      <div class="vstep"><div class="vt-time">+1-2 дня</div><div class="vt-desc">Благодарность участникам, фото, сбор feedback.</div></div>
+      <div class="vstep"><div class="vt-time">День мероприятия</div><div class="vt-desc">Посещаемость, фото и видео контент, контроль организации</div></div>
+      <div class="vstep"><div class="vt-time">+1-2 дня</div><div class="vt-desc">Благодарность участникам, публикация контента, сбор обратной связи</div></div>
       <div class="vstep"><div class="vt-time">+3-7 дней</div><div class="vt-desc">Итоговый пост, альбом или видео, материалы сохранены в архив.</div></div>
     </div>
 
@@ -379,61 +364,49 @@
 <section id="timeline">
   <div class="wrap">
     <h2 class="h2">План по месяцам</h2>
+    <h3 class="h3" style="margin-top:8px;">Октябрь - Ноябрь - Декабрь</h3>
 
-    <div class="month-tabs">
-      <button class="month-tab active" data-month="sep">Сентябрь</button>
-      <button class="month-tab" data-month="oct">Октябрь</button>
-      <button class="month-tab" data-month="nov">Ноябрь</button>
-      <button class="month-tab" data-month="dec">Декабрь</button>
+    <div class="month-grid">
+      <div class="month-card"><div class="tag">Member</div><ul>
+        <li>База 180+ участников с характеристиками</li>
+        <li>Сегментация: VIP, Active, New, International</li>
+        <li>Календарь важных дат</li>
+        <li>Опрос игроков из 5-7 вопросов</li>
+        <li>Запуск birthday protocol</li>
+        <li>Onboarding: day 1 &rarr; week 2</li>
+        <li>80-90% базы заполнено</li>
+        <li>TOP 30 участников</li>
+        <li>Ежемесячный список из 10-20 человек для внимания</li>
+        <li>Новогодние подарки</li>
+        <li>Признание годовщин 1/3/5 лет</li>
+      </ul></div>
+      <div class="month-card"><div class="tag">Events</div><ul>
+        <li>Годовой календарь: глобальных и локальных ивентов, покерных турниров</li>
+        <li>Аудит прошлых мероприятий: явка, стоимость, отклик</li>
+        <li>Event score после каждого события</li>
+        <li>Календарь 2027</li>
+      </ul></div>
+      <div class="month-card"><div class="tag">Merch</div><ul>
+        <li>Аудит того, что уже производилось</li>
+        <li>Опрос пожеланий участников клуба</li>
+        <li>Outreach на 20 брендов для коллабораций</li>
+        <li>2-3 samples, минимум 5 переговоров о коллабе</li>
+        <li>Product roadmap на 2027</li>
+      </ul></div>
+      <div class="month-card"><div class="tag">Media</div><ul>
+        <li>Контент-план</li>
+        <li>Регулярные материалы</li>
+        <li>RedParty 2026 Year in Review</li>
+        <li>Полный архив года собран</li>
+      </ul></div>
     </div>
 
-    <div class="month-panel active" id="panel-sep">
-      <div class="month-headline"><div class="a">Как устроен RedParty и что мы знаем о каждом участнике?</div></div>
-      <div class="month-grid">
-        <div class="month-card"><div class="tag">Member</div><ul><li>База 180+ участников с характеристиками</li><li>Сегментация: VIP, Active, New, International</li><li>Календарь важных дат</li><li>Опрос игроков из 5-7 вопросов</li></ul></div>
-        <div class="month-card"><div class="tag">Events</div><ul><li>Годовой календарь: глобальных и локальных ивентов, покерных турниров</li><li>Аудит прошлых мероприятий: явка, стоимость, отклик</li></ul></div>
-        <div class="month-card"><div class="tag">Merch</div><ul><li>Аудит того, что уже производилось</li><li>Опрос пожеланий участников клуба</li></ul></div>
-        <div class="month-card"><div class="tag">Media</div><ul><li>Контент-план</li></ul></div>
-      </div>
-    </div>
-
-    <div class="month-panel" id="panel-oct">
-      <div class="month-headline"><div class="a">Как превратить систему в регулярные действия?</div></div>
-      <div class="month-grid">
-        <div class="month-card"><div class="tag">Member</div><ul><li>Запуск birthday protocol</li><li>Onboarding: day 1 &rarr; week 2</li><li>80-90% базы заполнено</li></ul></div>
-        <div class="month-card"><div class="tag">Events</div></div>
-        <div class="month-card"><div class="tag">Merch</div><ul><li>Outreach на 20 брендов для коллабораций</li></ul></div>
-        <div class="month-card"><div class="tag">Media</div></div>
-      </div>
-    </div>
-
-    <div class="month-panel" id="panel-nov">
-      <div class="month-headline"><div class="a">Как сделать RedParty более персональным и разнообразным?</div></div>
-      <div class="month-grid">
-        <div class="month-card"><div class="tag">Member</div><ul><li>TOP 30 участников</li><li>Ежемесячный список из 10-20 человек для внимания</li></ul></div>
-        <div class="month-card"><div class="tag">Events</div><ul><li>Event score после каждого события</li></ul></div>
-        <div class="month-card"><div class="tag">Merch</div><ul><li>2-3 samples, минимум 5 переговоров о коллабе</li></ul></div>
-        <div class="month-card"><div class="tag">Media</div><ul><li>Регулярные материалы</li></ul></div>
-      </div>
-    </div>
-
-    <div class="month-panel" id="panel-dec">
-      <div class="month-headline"><div class="a">Что участник должен запомнить о RedParty в конце года?</div></div>
-      <div class="month-grid">
-        <div class="month-card"><div class="tag">Member</div><ul><li>Новогодние подарки</li><li>Признание годовщин 1/3/5 лет</li></ul></div>
-        <div class="month-card"><div class="tag">Events</div><ul><li>Календарь 2027</li></ul></div>
-        <div class="month-card"><div class="tag">Merch</div><ul><li>Product roadmap на 2027</li></ul></div>
-        <div class="month-card"><div class="tag">Media</div><ul><li>RedParty 2026 Year in Review</li><li>Полный архив года собран</li></ul></div>
-      </div>
-    </div>
-
-    <h3 class="h3">Еженедельный отчёт</h3>
+    <h3 class="h3">Регулярные отчёты</h3>
     <div class="report-grid">
-      <div class="report-cell"><div class="rn">Members</div><p>Новые профили, личные контакты, важные события, кому оказали внимание.</p></div>
-      <div class="report-cell"><div class="rn">Events</div><p>Что проведено, сколько участников, бюджет, проблемы, следующий event.</p></div>
-      <div class="report-cell"><div class="rn">Merch</div><p>Новые поставщики, samples, переговоры.</p></div>
-      <div class="report-cell"><div class="rn">Media</div><p>Сколько контента, что опубликовано, что отснято.</p></div>
-      <div class="report-cell"><div class="rn">Next Week</div><p>Три главные задачи следующей недели.</p></div>
+      <div class="report-cell"><div class="rn">Members</div><p>Новые профили, личные контакты, важные события, кому оказали внимание</p></div>
+      <div class="report-cell"><div class="rn">Events</div><p>Что проведено, сколько участников, бюджет, проблемы, следующий event</p></div>
+      <div class="report-cell"><div class="rn">Merch</div><p>Новые поставщики, samples, переговоры</p></div>
+      <div class="report-cell"><div class="rn">Media</div><p>Сколько контента, что опубликовано, что отснято</p></div>
     </div>
   </div>
 </section>
@@ -443,15 +416,15 @@
     <h2 class="h2">RedParty должен выглядеть не как клуб, который время от времени организует мероприятия, а как полноценное закрытое сообщество со своей инфраструктурой</h2>
 
     <div class="results-grid">
-      <div class="result-cell"><div class="rc-n">01</div><h4>Member CRM</h4><p>Каждый участник известен клубу не только как игрок.</p></div>
-      <div class="result-cell"><div class="rc-n">02</div><h4>Member Experience System</h4><p>Клуб понимает важные события в жизни людей и умеет правильно реагировать.</p></div>
-      <div class="result-cell"><div class="rc-n">03</div><h4>Onboarding</h4><p>Новый участник проходит понятный путь интеграции в клуб.</p></div>
-      <div class="result-cell"><div class="rc-n">04</div><h4>Event System</h4><p>Постоянный календарь и разные форматы мероприятий.</p></div>
-      <div class="result-cell"><div class="rc-n">05</div><h4>Product System</h4><p>RedParty создаёт продукты, которые участники действительно хотят использовать.</p></div>
-      <div class="result-cell"><div class="rc-n">06</div><h4>Partnership Pipeline</h4><p>Есть база брендов для будущих коллабораций.</p></div>
-      <div class="result-cell"><div class="rc-n">07</div><h4>Media System</h4><p>Каждое значимое событие документируется.</p></div>
-      <div class="result-cell"><div class="rc-n">08</div><h4>Club Rituals</h4><p>Появляются собственные традиции, подарки, награды и ежегодные события.</p></div>
-      <div class="result-cell"><div class="rc-n">09</div><h4>2027 Roadmap</h4><p>К концу декабря уже понятно, что RedParty делает в следующем году.</p></div>
+      <div class="result-cell"><div class="rc-n">01</div><h4>Member CRM</h4><p>Каждый участник известен клубу не только как игрок</p></div>
+      <div class="result-cell"><div class="rc-n">02</div><h4>Member Experience System</h4><p>Клуб понимает важные события в жизни людей и умеет правильно реагировать</p></div>
+      <div class="result-cell"><div class="rc-n">03</div><h4>Onboarding</h4><p>Новый участник проходит понятный путь интеграции в клуб</p></div>
+      <div class="result-cell"><div class="rc-n">04</div><h4>Event System</h4><p>Постоянный календарь и разные форматы мероприятий</p></div>
+      <div class="result-cell"><div class="rc-n">05</div><h4>Product System</h4><p>RedParty создаёт продукты, которые участники действительно хотят использовать</p></div>
+      <div class="result-cell"><div class="rc-n">06</div><h4>Partnership Pipeline</h4><p>Есть база брендов для будущих коллабораций</p></div>
+      <div class="result-cell"><div class="rc-n">07</div><h4>Media System</h4><p>Каждое значимое событие документируется</p></div>
+      <div class="result-cell"><div class="rc-n">08</div><h4>Club Rituals</h4><p>Появляются собственные традиции, подарки, награды и ежегодные события</p></div>
+      <div class="result-cell"><div class="rc-n">09</div><h4>2027 Roadmap</h4><p>К концу декабря уже понятно, что RedParty делает в следующем году</p></div>
     </div>
   </div>
 </section>
@@ -468,17 +441,6 @@
   });
   backToTop.addEventListener('click', function(){
     window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-</script>
-
-<script>
-  document.querySelectorAll('.month-tab').forEach(function(tab){
-    tab.addEventListener('click', function(){
-      document.querySelectorAll('.month-tab').forEach(function(t){ t.classList.remove('active'); });
-      document.querySelectorAll('.month-panel').forEach(function(p){ p.classList.remove('active'); });
-      tab.classList.add('active');
-      document.getElementById('panel-' + tab.dataset.month).classList.add('active');
-    });
   });
 </script>
 
